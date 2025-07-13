@@ -1,0 +1,149 @@
+{
+  "@dt_50p": {
+    "filter": [
+      {
+        "type": "condition",
+        "key": "\u23f1\ufe0f",
+        "operator": "<",
+        "value": "7"
+      }
+    ],
+    "last_post_id": 1211,
+    "call_template": {
+      "red": [
+        "\ud83d\udfe2LONG",
+        "ENTRY: {Now last price}"
+      ],
+      "green": [
+        "\ud83d\udd34SHORT",
+        "ENTRY: {Now last price}"
+      ]
+    }
+  },
+  "@aaaaaaatestaaaaaa": {
+    "filter": [
+      {
+        "type": "condition",
+        "key": "\u23f1\ufe0f",
+        "operator": "<",
+        "value": "5"
+      }
+    ],
+    "last_post_id": 85,
+    "call_template": {
+      "red": [
+        "\ud83d\udfe2LONG",
+        "ENTRY: {Now last price}"
+      ],
+      "green": [
+        "\ud83d\udd34SHORT",
+        "ENTRY: {Now last price}"
+      ]
+    }
+  },
+  "@MexcDexSpreadTrackerAlerts": {
+    "filter": [
+      {
+        "type": "condition",
+        "key": "Spread",
+        "operator": ">",
+        "value": "10%"
+      },
+      {
+        "type": "condition",
+        "key": "Avg Align Time",
+        "operator": ">",
+        "value": "150s"
+      }
+    ],
+    "last_post_id": 0
+  },
+  "@g_12p": {
+    "filter": [
+      {
+        "type": "condition",
+        "key": "\u23f1\ufe0f",
+        "operator": "<",
+        "value": "5"
+      }
+    ],
+    "last_post_id": 2871,
+    "call_template": {
+      "red": [
+        "\ud83d\udfe2LONG",
+        "ENTRY: {Now last price}"
+      ],
+      "green": [
+        "\ud83d\udd34SHORT",
+        "ENTRY: {Now last price}"
+      ]
+    }
+  },
+  "@bb_10p": {
+    "filter": [
+      {
+        "type": "condition",
+        "key": "\u23f1\ufe0f",
+        "operator": "<",
+        "value": "5"
+      }
+    ],
+    "last_post_id": 966,
+    "call_template": {
+      "red": [
+        "\ud83d\udfe2LONG",
+        "ENTRY: {Now last price}"
+      ],
+      "green": [
+        "\ud83d\udd34SHORT",
+        "ENTRY: {Now last price}"
+      ]
+    }
+  },
+  "@mexc_12p": {
+    "filter": [
+      {
+        "type": "condition",
+        "key": "\u23f1\ufe0f ... \u0437\u0430",
+        "operator": "<",
+        "value": "60"
+      }
+    ],
+    "last_post_id": 13671,
+    "call_template": {
+      "red": [
+        "\ud83d\udfe2LONG",
+        "ENTRY: {MIN}"
+      ],
+      "green": [
+        "\ud83d\udd34SHORT",
+        "ENTRY: {MAX}"
+      ]
+    }
+  },
+  "@DCACall": {
+    "filter": [
+      {
+        "type": "alternatives",
+        "values": [
+          "Scores: \ud83d\udd25",
+          "Scores: \ud83d\udc4d"
+        ]
+      },
+      {
+        "type": "condition",
+        "key": "Potential price change:",
+        "operator": ">",
+        "value": "10%"
+      }
+    ],
+    "last_post_id": 8496,
+    "call_template": {
+      "\ud83d\udfe5": [
+        "\ud83d\udd34SHORT",
+        "ENTRY: {Price}",
+        "Duration: {ETA}"
+      ]
+    }
+  }
+}
